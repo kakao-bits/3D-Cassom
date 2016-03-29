@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Game</title>
+		<style>
+			body {
+				background-image: url("images/back.jpg");
+				background-size: 100%;
+			}
+			#gameCanvas {
+				background-image: url("images/home.jpg");
+				background-size: 100%;
+				width: 1000px;
+				height: 540px;
+				margin: auto;
+				align: center;
+				border-style: ridge;
+				border-width: 3px;
+
+			}
+			#scoreboard {
+				text-align: center;
+				font-family: Segoe UI, Helvetica, Ubuntu, sans-serif;
+				color: white;
+				margin-top: -17px;
+			}
+			#scores {
+				font-size:120%; 
+				padding:0; 
+				color: white;
+			}
+			#title {
+				background-color: white;
+				color: black;
+				padding: 5px;
+				font-size:150%; 
+					margin-top: -15px;
+			}
+		</style>
+	</head>
+	<body onload='setup();'>
+		<div id='gameCanvas'></div>
+		<script src='./Scripts/three.min.js'></script>
+		<script src='./Scripts/variables.js'></script>
+		<script src='./Scripts/controls.js'></script>
+
+		<script src='./Scripts/game.js'></script>
+		<div id='scoreboard'>
+			<h4 id='scores'>0-0</h4>
+
+			
+		</div>
+	</body>
+</html>
